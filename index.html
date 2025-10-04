@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Airborne Tyres - Premium Second-Hand Tyres in Cape Town">
+    <meta name="theme-color" content="#B91C1C">
+    <title>Airborne Tyres | Quality Second-Hand Tyres</title>
+    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#B91C1C',
+                        secondary: '#1F2937',
+                        accent: '#D1A054',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(31, 41, 55, 0.8), rgba(185, 28, 28, 0.7)), url('http://static.photos/automotive/1200x630/1');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .tyre-shadow {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+        .whatsapp-link:hover {
+            background-color: #25D366 !important;
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="bg-secondary text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <i data-feather="truck" class="text-accent w-8 h-8"></i>
+                <span class="text-xl font-bold">Airborne <span class="text-primary">Tyres</span></span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:text-accent transition">Home</a>
+                <a href="#about" class="hover:text-accent transition">About</a>
+                <a href="#contact" class="hover:text-accent transition">Contact</a>
+            </div>
+            <button class="md:hidden focus:outline-none" id="menu-btn">
+                <i data-feather="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-secondary px-6 py-3" id="mobile-menu">
+            <div class="flex flex-col space-y-3">
+                <a href="#home" class="hover:text-accent transition">Home</a>
+                <a href="#about" class="hover:text-accent transition">About</a>
+                <a href="#contact" class="hover:text-accent transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white min-h-screen flex items-center justify-center">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 pulse">Good 2'nd-Hand Tyres</h1>
+            <p class="text-xl md:text-2xl mb-8">Quality tyres that won't break the bank</p>
+            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
+                <a href="https://wa.me/27604647787" onclick="window.open('https://wa.me/27604647787', '_blank', 'noopener,noreferrer'); return false;" class="bg-primary hover:bg-opacity-90 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover-scale transition duration-300">
+                    Chat on WhatsApp
+                </a>
+                <a href="https://wa.me/27604647787" onclick="window.open('https://wa.me/27604647787', '_blank', 'noopener,noreferrer'); return false;" class="bg-accent hover:bg-opacity-90 text-secondary font-bold py-3 px-6 rounded-lg shadow-lg hover-scale transition duration-300">
+                    Call via WhatsApp
+                </a>
+</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">Why Choose Airborne Tyres?</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover-scale tyre-shadow">
+                    <div class="text-accent mb-4">
+                        <i data-feather="dollar-sign" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-3">Affordable Prices</h3>
+                    <p class="text-gray-600">Quality second-hand tyres at prices that make sense for your budget without compromising on safety.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover-scale tyre-shadow">
+                    <div class="text-accent mb-4">
+                        <i data-feather="check-circle" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-3">Quality Assurance</h3>
+                    <p class="text-gray-600">Every tyre is thoroughly inspected to ensure it meets our high standards before being offered to customers.</p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md hover-scale tyre-shadow">
+                    <div class="text-accent mb-4">
+                        <i data-feather="clock" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-secondary mb-3">Quick Service</h3>
+                    <p class="text-gray-600">We understand your time is valuable - our team works efficiently to get you back on the road quickly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-secondary mb-4">What Our Customers Say</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="bg-white p-8 rounded-lg shadow-md hover-scale">
+                    <div class="flex mb-4">
+                        <i data-feather="star" class="text-accent w-5 h-5"></i>
+                        <i data-feather="star" class="text-accent w-5 h-5"></i>
+                        <i data-feather="star" class="text-accent w-5 h-5"></i>
+                        <i data-feather="star" class="text-accent w-5 h-5"></i>
+                        <i data-feather="star" class="text-accent w-5 h-5"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Got a full set of tyres for half the price of new ones. They've been running perfectly for months now. Highly recommend!"</p>
+                    <p class="font-bold text-secondary">- Thando M.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover-scale">
+                    <div class="flex mb-4">
+                        <i data-feather="star" class="text-accent w-5 h-5"></i>
+                        <i data-feather="star" class="text-accent w-5 h-5"></i>
+                        <i data-feather="star" class="text-accent w-5 h-5"></i>
+                        <i data-feather="star" class="text-accent w-5 h-5"></i>
+                        <i data-feather="star" class="text-accent w-5 h-5"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Excellent service! The team helped me find the perfect tyres for my bakkie at a great price. Will definitely be back."</p>
+                    <p class="font-bold text-secondary">- Sipho K.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md hover-scale">
+                    <div class="flex mb-4">
+                        <i data-feather="star" class="text-accent w-5 h-5"></i>
+                        <i data-feather="star" class="text-accent w-5 h-5"></i>
+                        <i data-feather="star" class="text-accent w-5 h-5"></i>
+                        <i data-feather="star" class="text-accent w-5 h-5"></i>
+                        <i data-feather="star" class="text-gray-300 w-5 h-5"></i>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Quick, professional service. The tyres I bought still have great tread and were fitted in no time. Very happy!"</p>
+                    <p class="font-bold text-secondary">- Amina J.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-secondary text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <i data-feather="map-pin" class="text-accent w-6 h-6 mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold">Address</h4>
+                                <p>53 Prince George Drive, Grassy Park, Cape Town</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="phone" class="text-accent w-6 h-6 mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold">Phone</h4>
+                                <a href="tel:+27604647787" class="hover:text-accent transition">060 464 7787</a><br>
+                                <a href="tel:+27632114946" class="hover:text-accent transition">063 211 4946</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="mail" class="text-accent w-6 h-6 mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold">Email</h4>
+                                <a href="mailto:info.airbornetyres@gmail.com" class="hover:text-accent transition">info.airbornetyres@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="clock" class="text-accent w-6 h-6 mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold">Business Hours</h4>
+                                <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+<p>Saturday: 8:00 AM - 5:00 PM</p>
+                                <p>Sunday: 8:00 AM - 3:00 PM</p>
+<p class="mt-4 font-semibold">Services:</p>
+                                <ul class="list-disc pl-5 space-y-1">
+                                    <li>Quality Second-Hand Tyres</li>
+                                    <li>Puncture Repairs</li>
+                                    <li>Rim Sealers in Stock</li>
+                                    <li>Tyre Fitting & Balancing</li>
+                                </ul>
+</div>
+                        </div>
+                        <div>
+                            <a href="https://wa.me/27604647787" onclick="window.open('https://wa.me/27604647787', '_blank', 'noopener,noreferrer'); return false;" class="whatsapp-link bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg flex items-center justify-center space-x-2 transition duration-300">
+                                <i data-feather="message-circle" class="w-5 h-5"></i>
+                                <span>Chat on WhatsApp</span>
+                            </a>
+</div>
+                    </div>
+                </div>
+</div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="h-96 bg-gray-200">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.2927032427813!2d18.50269431521168!3d-33.99693398062247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc43f5c9d2e4b5%3A0x5f5c5e5b5e5d5e5f!2s53%20Prince%20George%20Dr%2C%20Grassy%20Park%2C%20Cape%20Town%2C%207140!5e0!3m2!1sen!2sza!4v1620000000000!5m2!1sen!2sza" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Airborne Tyres</h4>
+                    <p class="text-gray-400">Providing quality second-hand tyres to Cape Town since 2010.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-accent transition">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-accent transition">About</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-accent transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i data-feather="map-pin" class="w-4 h-4 mr-2 mt-1 text-accent"></i>
+                            <span>53 Prince George Drive, Grassy Park</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="phone" class="w-4 h-4 mr-2 mt-1 text-accent"></i>
+                            <span>060 464 7787</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="mail" class="w-4 h-4 mr-2 mt-1 text-accent"></i>
+                            <span>info.airbornetyres@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-gray-800 hover:bg-primary p-3 rounded-full transition">
+                            <i data-feather="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-primary p-3 rounded-full transition">
+                            <i data-feather="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-primary p-3 rounded-full transition">
+                            <i data-feather="twitter" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-10 pt-6 text-center text-gray-400">
+                <p>&copy; 2023 Airborne Tyres. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PWA Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').then(registration => {
+                    console.log('ServiceWorker registration successful');
+                }).catch(err => {
+                    console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden');
+                mobileMenu.classList.add('block');
+            } else {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('block');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu if open
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenu.classList.remove('block');
+                }
+            });
+        });
+        // Initialize feather icons
+        feather.replace();
+</script>
+</body>
+</html>
